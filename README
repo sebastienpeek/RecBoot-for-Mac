@@ -1,0 +1,15 @@
+RecBoot for Mac:
+-----------------
+This Mac application was originally released almost a year ago. Today marks the day that Version 2 is available, completely open source.
+
+However, there are a couple of issues with this at the moment.
+
+When kicking the device into Recovery Mode and out of Recovery Mode in the same instance that the application is open, it will cause a crash.
+
+Any help in resolving this crash would b e greatly appreciated.
+
+FORK AWAY!
+
+-----------------
+This is released under the GPL v3.
+-----------------
