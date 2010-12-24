@@ -29,20 +29,12 @@ void notification_callback(struct am_device_notification_callback_info *info, in
 	}
 }
 
-void recovery_notification_callback(struct am_device_notification_callback_info *info, int cookie) {
-	if (info->msg == ADNCI_MSG_CONNECTED) {
-		device = info->dev;
-		AMDeviceConnect(device);
-		AMDeviceEnterRecovery(device);
-		[classPointer dePopulateData];
-	} else {
-		printf("uhoh");
-	}
-
-}	
-
 void recovery_connect_callback(struct am_recovery_device *rdev) {
-	NSLog(@"In Recovery Mode");
+	[classPointer recoveryCallback];
+}
+
+void recovery_disconnect_callback(struct am_recovery_device *rdev) {
+	[classPointer dePopulateData];
 }
 
 @implementation RecBootAppDelegate
@@ -50,30 +42,18 @@ void recovery_connect_callback(struct am_recovery_device *rdev) {
 @synthesize window;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-	
 	classPointer = self;
 	AMDeviceNotificationSubscribe(notification_callback, 0, 0, 0, &notification);
+	AMRestoreRegisterForDeviceNotifications(recovery_disconnect_callback, recovery_connect_callback, recovery_disconnect_callback, recovery_disconnect_callback, 0, NULL);
 }
 
 - (IBAction)enterRec:(id)pId {
-	
-	AMDeviceNotificationSubscribe(recovery_notification_callback, 0, 0, 0, &notification);
-	
-	AMRestoreRegisterForDeviceNotifications(
-											NULL,
-											recovery_connect_callback,
-											NULL,
-											NULL,
-											0,
-											NULL
-											);
-	
+	AMDeviceConnect(device);
+	AMDeviceEnterRecovery(device);
+	[classPointer dePopulateData];
 }
 
 - (IBAction)exitRec:(id)pId {
-	
-	AMDeviceNotificationSubscribe(recovery_notification_callback, 0, 0, 0, &notification);
-	
 	//Allow the user to exit recovery mode through the application.
 	
 	//Makes recoverset the NSTask to be used.
@@ -105,6 +85,10 @@ void recovery_connect_callback(struct am_recovery_device *rdev) {
 	
 }
 
+- (void)recoveryCallback {
+	[deviceDetails setStringValue:@"Recovery Device Connected"];
+}
+
 - (void)populateData {
 	NSString *serialNumber = [self getDeviceValue:@"SerialNumber"];
 	NSString *modelNumber = [self getDeviceValue:@"ModelNumber"];
@@ -131,13 +115,12 @@ void recovery_connect_callback(struct am_recovery_device *rdev) {
 		deviceString = @"Unknown Device";
 	}
 	
-	NSString *completeString = [NSString stringWithFormat:@"%@, %@, %@, %@", deviceString, modelNumber, firmwareVersion, serialNumber];
+	NSString *completeString = [NSString stringWithFormat:@"%@ Connected, %@, %@, %@", deviceString, modelNumber, firmwareVersion, serialNumber];
 	
 	[deviceDetails setStringValue:completeString];
 }
 
 - (void)dePopulateData {
-	
 	[deviceDetails setStringValue:@""];
 	
 }

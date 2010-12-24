@@ -1,18 +1,18 @@
 TRecBoot
 v7
 r0
-t314727496.316252
+t314858849.877877
 cCheck dependencies
-cProcessInfoPlistFile /Users/sebastienpeek/Desktop/RecBoot/build/Debug/RecBoot.app/Contents/Info.plist RecBoot-Info.plist
-cCopyStringsFile /Users/sebastienpeek/Desktop/RecBoot/build/Debug/RecBoot.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-cCompileXIB /Users/sebastienpeek/Desktop/RecBoot/English.lproj/MainMenu.xib
+cProcessInfoPlistFile /Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/RecBoot.app/Contents/Info.plist RecBoot-Info.plist
+cCopyStringsFile /Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/RecBoot.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+cCompileXIB /Users/Ari/Downloads/AriX-RecBoot/RecBoot/English.lproj/MainMenu.xib
 cCpResource build/Debug/RecBoot.app/Contents/Resources/irecovery irecovery
 cCpResource build/Debug/RecBoot.app/Contents/Resources/Icon.icns Icon.icns
-cProcessPCH /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-buwxdthkbwnbvccyecwuswkuyrqr/RecBoot_Prefix.pch.gch RecBoot_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/RecBoot.build/Debug/RecBoot.build/Objects-normal/x86_64/main.o /Users/sebastienpeek/Desktop/RecBoot/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/RecBoot.build/Debug/RecBoot.build/Objects-normal/x86_64/RecBootAppDelegate.o /Users/sebastienpeek/Desktop/RecBoot/RecBootAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/sebastienpeek/Desktop/RecBoot/build/Debug/RecBoot.app/Contents/MacOS/RecBoot normal x86_64
-cTouch /Users/sebastienpeek/Desktop/RecBoot/build/Debug/RecBoot.app
+cProcessPCH /var/folders/3T/3T4wSCAJE3Go3ruCwjtV5++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-ayraajhinwdhlyabqklwiknfncxf/RecBoot_Prefix.pch.gch RecBoot_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RecBoot.build/Debug/RecBoot.build/Objects-normal/x86_64/main.o /Users/Ari/Downloads/AriX-RecBoot/RecBoot/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RecBoot.build/Debug/RecBoot.build/Objects-normal/x86_64/RecBootAppDelegate.o /Users/Ari/Downloads/AriX-RecBoot/RecBoot/RecBootAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/RecBoot.app/Contents/MacOS/RecBoot normal x86_64
+cTouch /Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/RecBoot.app
 
 N/Developer 4.2/SDKs/MacOSX10.6.sdk
 c000000004CAA740B00000000000000EE
@@ -34,10 +34,133 @@ c000000004C2399470000000000000F22
 t1277401415
 s3874
 
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004CAA740B00000000000000EE
+t1286239243
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h
+c000000004C239DAB0000000000000AF4
+t1277402539
+s2804
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/mach/error.h
+c000000004C2399470000000000000F22
+t1277401415
+s3874
+
 N/System/Library/Frameworks/Cocoa.framework/Cocoa
 c000000004A1F2D63000000000000A5E0
 t1243557219
 s42464
+
+N/Users/Ari/Downloads/AriX-RecBoot/RecBoot/English.lproj/InfoPlist.strings
+c000000004D1210E2000000000000002D
+t1293029602
+s45
+
+N/Users/Ari/Downloads/AriX-RecBoot/RecBoot/English.lproj/MainMenu.xib
+c000000004D14242E000000000000B5B4
+t1293165614
+s46516
+
+N/Users/Ari/Downloads/AriX-RecBoot/RecBoot/Icon.icns
+c000000004BE95400000000000002B7A6
+t1273582592
+s178086
+
+N/Users/Ari/Downloads/AriX-RecBoot/RecBoot/MobileDevice.framework/MobileDevice
+c000000004D12116D0000000000030A58
+t1293029741
+s199256
+
+N/Users/Ari/Downloads/AriX-RecBoot/RecBoot/MobileDevice.h
+c000000004CFF1DAC000000000000314C
+t1291787692
+s12620
+i<CoreFoundation.h>
+i<CoreFoundation/CoreFoundation.h>
+i<mach/error.h>
+
+N/Users/Ari/Downloads/AriX-RecBoot/RecBoot/RecBootAppDelegate.h
+c000000004D1424D8000000000000022E
+t1293165784
+s558
+i<Cocoa/Cocoa.h>
+i"MobileDevice.h"
+
+N/Users/Ari/Downloads/AriX-RecBoot/RecBoot/RecBootAppDelegate.m
+c000000004D1425E100000000000010CA
+t1293166049
+s4298
+i"RecBootAppDelegate.h"
+
+N/Users/Ari/Downloads/AriX-RecBoot/RecBoot/RecBoot_Prefix.pch
+c000000004D1210E20000000000000091
+t1293029602
+s145
+i<Cocoa/Cocoa.h>
+
+N/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/RecBoot.app
+t1293166049
+s102
+
+N/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/RecBoot.app/Contents/Info.plist
+t1293032640
+s938
+
+N/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/RecBoot.app/Contents/MacOS/RecBoot
+t1293166049
+s21520
+
+N/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/RecBoot.app/Contents/PkgInfo
+t1293032640
+s8
+
+N/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/RecBoot.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1293029771
+s92
+
+N/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/RecBoot.app/Contents/Resources/English.lproj/MainMenu.nib
+t1293165634
+s6567
+
+N/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/RecBoot.app/Contents/Resources/Icon.icns
+t1293032641
+s178086
+
+N/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/RecBoot.app/Contents/Resources/irecovery
+t1293032641
+s44628
+
+N/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/RecBoot.build/Debug/RecBoot.build/Objects-normal/x86_64/RecBoot.LinkFileList
+c000000004D12CEAD00000000000000EC
+t1293078189
+s236
+
+N/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/RecBoot.build/Debug/RecBoot.build/Objects-normal/x86_64/RecBootAppDelegate.o
+t1293166049
+s37000
+
+N/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/RecBoot.build/Debug/RecBoot.build/Objects-normal/x86_64/main.o
+t1293078191
+s4992
+
+N/Users/Ari/Downloads/AriX-RecBoot/RecBoot/irecovery
+c000000004C2AE016000000000000AE54
+t1277878294
+s44628
+
+N/Users/Ari/Downloads/AriX-RecBoot/RecBoot/main.m
+c000000004D1210E200000000000000F8
+t1293029602
+s248
+i<Cocoa/Cocoa.h>
 
 N/Users/sebastienpeek/Desktop/RecBoot/English.lproj/InfoPlist.strings
 c000000004D1210E2000000000000002D
@@ -142,6 +265,113 @@ t1293029602
 s248
 i<Cocoa/Cocoa.h>
 
+N/Users/sebastienpeek/Downloads/RecBoot/English.lproj/InfoPlist.strings
+c000000004D1210E2000000000000002D
+t1293029602
+s45
+
+N/Users/sebastienpeek/Downloads/RecBoot/English.lproj/MainMenu.xib
+c000000004D14242E000000000000B5B4
+t1293165614
+s46516
+
+N/Users/sebastienpeek/Downloads/RecBoot/Icon.icns
+c000000004BE95400000000000002B7A6
+t1273582592
+s178086
+
+N/Users/sebastienpeek/Downloads/RecBoot/MobileDevice.framework/MobileDevice
+c000000004D12116D0000000000030A58
+t1293029741
+s199256
+
+N/Users/sebastienpeek/Downloads/RecBoot/MobileDevice.h
+c000000004CFF1DAC000000000000314C
+t1291787692
+s12620
+i<CoreFoundation.h>
+i<CoreFoundation/CoreFoundation.h>
+i<mach/error.h>
+
+N/Users/sebastienpeek/Downloads/RecBoot/RecBootAppDelegate.h
+c000000004D1424D8000000000000022E
+t1293165784
+s558
+i<Cocoa/Cocoa.h>
+i"MobileDevice.h"
+
+N/Users/sebastienpeek/Downloads/RecBoot/RecBootAppDelegate.m
+c000000004D1425E100000000000010CA
+t1293166049
+s4298
+i"RecBootAppDelegate.h"
+
+N/Users/sebastienpeek/Downloads/RecBoot/RecBoot_Prefix.pch
+c000000004D1210E20000000000000091
+t1293029602
+s145
+i<Cocoa/Cocoa.h>
+
+N/Users/sebastienpeek/Downloads/RecBoot/build/Debug/RecBoot.app
+t1293166049
+s102
+
+N/Users/sebastienpeek/Downloads/RecBoot/build/Debug/RecBoot.app/Contents/Info.plist
+t1293032640
+s938
+
+N/Users/sebastienpeek/Downloads/RecBoot/build/Debug/RecBoot.app/Contents/MacOS/RecBoot
+t1293166049
+s21520
+
+N/Users/sebastienpeek/Downloads/RecBoot/build/Debug/RecBoot.app/Contents/PkgInfo
+t1293032640
+s8
+
+N/Users/sebastienpeek/Downloads/RecBoot/build/Debug/RecBoot.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1293029771
+s92
+
+N/Users/sebastienpeek/Downloads/RecBoot/build/Debug/RecBoot.app/Contents/Resources/English.lproj/MainMenu.nib
+t1293165634
+s6567
+
+N/Users/sebastienpeek/Downloads/RecBoot/build/Debug/RecBoot.app/Contents/Resources/Icon.icns
+t1293032641
+s178086
+
+N/Users/sebastienpeek/Downloads/RecBoot/build/Debug/RecBoot.app/Contents/Resources/irecovery
+t1293032641
+s44628
+
+N/Users/sebastienpeek/Downloads/RecBoot/build/RecBoot.build/Debug/RecBoot.build/Objects-normal/x86_64/RecBoot.LinkFileList
+c000000004D12CEAD00000000000000EC
+t1293078189
+s236
+
+N/Users/sebastienpeek/Downloads/RecBoot/build/RecBoot.build/Debug/RecBoot.build/Objects-normal/x86_64/RecBootAppDelegate.o
+t1293166049
+s37000
+
+N/Users/sebastienpeek/Downloads/RecBoot/build/RecBoot.build/Debug/RecBoot.build/Objects-normal/x86_64/main.o
+t1293078191
+s4992
+
+N/Users/sebastienpeek/Downloads/RecBoot/irecovery
+c000000004C2AE016000000000000AE54
+t1277878294
+s44628
+
+N/Users/sebastienpeek/Downloads/RecBoot/main.m
+c000000004D1210E200000000000000F8
+t1293029602
+s248
+i<Cocoa/Cocoa.h>
+
+N/var/folders/3T/3T4wSCAJE3Go3ruCwjtV5++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-ayraajhinwdhlyabqklwiknfncxf/RecBoot_Prefix.pch.gch
+t1293078191
+s54306576
+
 N/var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-buwxdthkbwnbvccyecwuswkuyrqr/RecBoot_Prefix.pch.gch
 t1293029799
 s54302480
@@ -150,14 +380,31 @@ N/var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/Shared
 t2
 s0
 
+N/var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-fncjxqadydvhixcabbqotnmidyjb/RecBoot_Prefix.pch.gch
+t2
+s0
+
 NRecBoot-Info.plist
-c000000004D121CC000000000000003EE
-t1293032640
-s1006
+c000000004D14A8EB00000000000003E9
+t1293199595
+s1001
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies314727495#314727495#0(0"0(0#1#0"7382074289954583552#0"0#
+lSLF07#2@18"Check dependencies314858849#314858849#0(0"0(0#1#0"8625265984#0"0#
+
+CCompileC build/RecBoot.build/Debug/RecBoot.build/Objects-normal/x86_64/RecBootAppDelegate.o /Users/Ari/Downloads/AriX-RecBoot/RecBoot/RecBootAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s314858849.680332
+e314858849.844663
+r1
+xCompileC
+xbuild/RecBoot.build/Debug/RecBoot.build/Objects-normal/x86_64/RecBootAppDelegate.o
+x/Users/Ari/Downloads/AriX-RecBoot/RecBoot/RecBootAppDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@70"Compile /Users/Ari/Downloads/AriX-RecBoot/RecBoot/RecBootAppDelegate.m314858849#314858849#0(0"0(0#0#62"/Users/Ari/Downloads/AriX-RecBoot/RecBoot/RecBootAppDelegate.m8627190976#1555"    cd /Users/Ari/Downloads/AriX-RecBoot/RecBoot    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/RecBoot.build/Debug/RecBoot.build/RecBoot-generated-files.hmap -I/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/RecBoot.build/Debug/RecBoot.build/RecBoot-own-target-headers.hmap -I/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/RecBoot.build/Debug/RecBoot.build/RecBoot-all-target-headers.hmap -iquote /Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/RecBoot.build/Debug/RecBoot.build/RecBoot-project-headers.hmap -F/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug -F/Users/Ari/Downloads/AriX-RecBoot/RecBoot -I/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/include -I/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/RecBoot.build/Debug/RecBoot.build/DerivedSources/x86_64 -I/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/RecBoot.build/Debug/RecBoot.build/DerivedSources -include /var/folders/3T/3T4wSCAJE3Go3ruCwjtV5++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-ayraajhinwdhlyabqklwiknfncxf/RecBoot_Prefix.pch -c /Users/Ari/Downloads/AriX-RecBoot/RecBoot/RecBootAppDelegate.m -o /Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/RecBoot.build/Debug/RecBoot.build/Objects-normal/x86_64/RecBootAppDelegate.o0#
 
 CCompileC build/RecBoot.build/Debug/RecBoot.build/Objects-normal/x86_64/RecBootAppDelegate.o /Users/sebastienpeek/Desktop/RecBoot/RecBootAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s314727495.084190
@@ -172,6 +419,22 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@65"Compile /Users/sebastienpeek/Desktop/RecBoot/RecBootAppDelegate.m314727495#314727495#0(0"0(0#0#57"/Users/sebastienpeek/Desktop/RecBoot/RecBootAppDelegate.m3401403401131030528#1507"    cd /Users/sebastienpeek/Desktop/RecBoot    setenv LANG en_US.US-ASCII    "/Developer 4.2/usr/bin/gcc-4.2" -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer 4.2/SDKs/MacOSX10.6.sdk" -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sebastienpeek/Desktop/RecBoot/build/RecBoot.build/Debug/RecBoot.build/RecBoot-generated-files.hmap -I/Users/sebastienpeek/Desktop/RecBoot/build/RecBoot.build/Debug/RecBoot.build/RecBoot-own-target-headers.hmap -I/Users/sebastienpeek/Desktop/RecBoot/build/RecBoot.build/Debug/RecBoot.build/RecBoot-all-target-headers.hmap -iquote /Users/sebastienpeek/Desktop/RecBoot/build/RecBoot.build/Debug/RecBoot.build/RecBoot-project-headers.hmap -F/Users/sebastienpeek/Desktop/RecBoot/build/Debug -F/Users/sebastienpeek/Desktop/RecBoot -I/Users/sebastienpeek/Desktop/RecBoot/build/Debug/include -I/Users/sebastienpeek/Desktop/RecBoot/build/RecBoot.build/Debug/RecBoot.build/DerivedSources/x86_64 -I/Users/sebastienpeek/Desktop/RecBoot/build/RecBoot.build/Debug/RecBoot.build/DerivedSources -include /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-buwxdthkbwnbvccyecwuswkuyrqr/RecBoot_Prefix.pch -c /Users/sebastienpeek/Desktop/RecBoot/RecBootAppDelegate.m -o /Users/sebastienpeek/Desktop/RecBoot/build/RecBoot.build/Debug/RecBoot.build/Objects-normal/x86_64/RecBootAppDelegate.o0#
 
+CCompileC build/RecBoot.build/Debug/RecBoot.build/Objects-normal/x86_64/RecBootAppDelegate.o /Users/sebastienpeek/Downloads/RecBoot/RecBootAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/RecBoot.build/Debug/RecBoot.build/Objects-normal/x86_64/main.o /Users/Ari/Downloads/AriX-RecBoot/RecBoot/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s314770991.764987
+e314770991.882067
+r1
+xCompileC
+xbuild/RecBoot.build/Debug/RecBoot.build/Objects-normal/x86_64/main.o
+x/Users/Ari/Downloads/AriX-RecBoot/RecBoot/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@56"Compile /Users/Ari/Downloads/AriX-RecBoot/RecBoot/main.m314770991#314770991#0(0"0(0#0#48"/Users/Ari/Downloads/AriX-RecBoot/RecBoot/main.m8601320960#1527"    cd /Users/Ari/Downloads/AriX-RecBoot/RecBoot    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/RecBoot.build/Debug/RecBoot.build/RecBoot-generated-files.hmap -I/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/RecBoot.build/Debug/RecBoot.build/RecBoot-own-target-headers.hmap -I/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/RecBoot.build/Debug/RecBoot.build/RecBoot-all-target-headers.hmap -iquote /Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/RecBoot.build/Debug/RecBoot.build/RecBoot-project-headers.hmap -F/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug -F/Users/Ari/Downloads/AriX-RecBoot/RecBoot -I/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/include -I/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/RecBoot.build/Debug/RecBoot.build/DerivedSources/x86_64 -I/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/RecBoot.build/Debug/RecBoot.build/DerivedSources -include /var/folders/3T/3T4wSCAJE3Go3ruCwjtV5++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-ayraajhinwdhlyabqklwiknfncxf/RecBoot_Prefix.pch -c /Users/Ari/Downloads/AriX-RecBoot/RecBoot/main.m -o /Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/RecBoot.build/Debug/RecBoot.build/Objects-normal/x86_64/main.o0#
+
 CCompileC build/RecBoot.build/Debug/RecBoot.build/Objects-normal/x86_64/main.o /Users/sebastienpeek/Desktop/RecBoot/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s314722599.475258
 e314722600.337698
@@ -185,6 +448,17 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@51"Compile /Users/sebastienpeek/Desktop/RecBoot/main.m314722599#314722600#0(0"0(0#0#43"/Users/sebastienpeek/Desktop/RecBoot/main.m8624873248#1479"    cd /Users/sebastienpeek/Desktop/RecBoot    setenv LANG en_US.US-ASCII    "/Developer 4.2/usr/bin/gcc-4.2" -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer 4.2/SDKs/MacOSX10.6.sdk" -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sebastienpeek/Desktop/RecBoot/build/RecBoot.build/Debug/RecBoot.build/RecBoot-generated-files.hmap -I/Users/sebastienpeek/Desktop/RecBoot/build/RecBoot.build/Debug/RecBoot.build/RecBoot-own-target-headers.hmap -I/Users/sebastienpeek/Desktop/RecBoot/build/RecBoot.build/Debug/RecBoot.build/RecBoot-all-target-headers.hmap -iquote /Users/sebastienpeek/Desktop/RecBoot/build/RecBoot.build/Debug/RecBoot.build/RecBoot-project-headers.hmap -F/Users/sebastienpeek/Desktop/RecBoot/build/Debug -F/Users/sebastienpeek/Desktop/RecBoot -I/Users/sebastienpeek/Desktop/RecBoot/build/Debug/include -I/Users/sebastienpeek/Desktop/RecBoot/build/RecBoot.build/Debug/RecBoot.build/DerivedSources/x86_64 -I/Users/sebastienpeek/Desktop/RecBoot/build/RecBoot.build/Debug/RecBoot.build/DerivedSources -include /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-buwxdthkbwnbvccyecwuswkuyrqr/RecBoot_Prefix.pch -c /Users/sebastienpeek/Desktop/RecBoot/main.m -o /Users/sebastienpeek/Desktop/RecBoot/build/RecBoot.build/Debug/RecBoot.build/Objects-normal/x86_64/main.o0#
 
+CCompileC build/RecBoot.build/Debug/RecBoot.build/Objects-normal/x86_64/main.o /Users/sebastienpeek/Downloads/RecBoot/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileXIB /Users/Ari/Downloads/AriX-RecBoot/RecBoot/English.lproj/MainMenu.xib
+s314858434.257469
+e314858434.543442
+r1
+xCompileXIB
+x/Users/Ari/Downloads/AriX-RecBoot/RecBoot/English.lproj/MainMenu.xib
+lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib314858434#314858434#0(0"0(0#0#68"/Users/Ari/Downloads/AriX-RecBoot/RecBoot/English.lproj/MainMenu.xib8596143232#373"    cd /Users/Ari/Downloads/AriX-RecBoot/RecBoot    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/RecBoot.app/Contents/Resources/English.lproj/MainMenu.nib /Users/Ari/Downloads/AriX-RecBoot/RecBoot/English.lproj/MainMenu.xib --sdk /Developer/SDKs/MacOSX10.6.sdk0#
+
 CCompileXIB /Users/sebastienpeek/Desktop/RecBoot/English.lproj/MainMenu.xib
 s314723397.534022
 e314723398.966441
@@ -192,6 +466,12 @@ r1
 xCompileXIB
 x/Users/sebastienpeek/Desktop/RecBoot/English.lproj/MainMenu.xib
 lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib314723397#314723398#0(0"0(0#0#63"/Users/sebastienpeek/Desktop/RecBoot/English.lproj/MainMenu.xib8622949472#370"    cd /Users/sebastienpeek/Desktop/RecBoot    "/Developer 4.2/usr/bin/ibtool" --errors --warnings --notices --output-format human-readable-text --compile /Users/sebastienpeek/Desktop/RecBoot/build/Debug/RecBoot.app/Contents/Resources/English.lproj/MainMenu.nib /Users/sebastienpeek/Desktop/RecBoot/English.lproj/MainMenu.xib --sdk "/Developer 4.2/SDKs/MacOSX10.6.sdk"0#
+
+CCompileXIB /Users/sebastienpeek/Downloads/RecBoot/English.lproj/MainMenu.xib
+r0
+
+CCopyStringsFile /Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/RecBoot.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+r0
 
 CCopyStringsFile /Users/sebastienpeek/Desktop/RecBoot/build/Debug/RecBoot.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
 s314722570.394744
@@ -201,6 +481,9 @@ xCopyStringsFile
 x/Users/sebastienpeek/Desktop/RecBoot/build/Debug/RecBoot.app/Contents/Resources/English.lproj/InfoPlist.strings
 xEnglish.lproj/InfoPlist.strings
 lSLF07#2@36"Copy English.lproj/InfoPlist.strings314722570#314722571#0(0"0(0#0#68"/Users/sebastienpeek/Desktop/RecBoot/English.lproj/InfoPlist.strings8625699168#367"    cd /Users/sebastienpeek/Desktop/RecBoot    setenv ICONV /usr/bin/iconv    "/Developer 4.2/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings" --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/sebastienpeek/Desktop/RecBoot/build/Debug/RecBoot.app/Contents/Resources/English.lproj0#
+
+CCopyStringsFile /Users/sebastienpeek/Downloads/RecBoot/build/Debug/RecBoot.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+r0
 
 CCpResource build/Debug/RecBoot.app/Contents/Resources/Icon.icns Icon.icns
 s314725440.960965
@@ -220,6 +503,16 @@ xbuild/Debug/RecBoot.app/Contents/Resources/irecovery
 xirecovery
 lSLF07#2@14"Copy irecovery314725440#314725441#0(0"0(0#0#46"/Users/sebastienpeek/Desktop/RecBoot/irecovery8616420032#339"    cd /Users/sebastienpeek/Desktop/RecBoot    "/Developer 4.2/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp" -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/sebastienpeek/Desktop/RecBoot/irecovery /Users/sebastienpeek/Desktop/RecBoot/build/Debug/RecBoot.app/Contents/Resources0#
 
+CLd /Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/RecBoot.app/Contents/MacOS/RecBoot normal x86_64
+s314858849.844806
+e314858849.875363
+r1
+xLd
+x/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/RecBoot.app/Contents/MacOS/RecBoot
+xnormal
+xx86_64
+lSLF07#2@93"Link /Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/RecBoot.app/Contents/MacOS/RecBoot314858849#314858849#0(0"0(0#0#0"8630030784#625"    cd /Users/Ari/Downloads/AriX-RecBoot/RecBoot    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug -F/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug -F/Users/Ari/Downloads/AriX-RecBoot/RecBoot -filelist /Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/RecBoot.build/Debug/RecBoot.build/Objects-normal/x86_64/RecBoot.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -framework MobileDevice -o /Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/RecBoot.app/Contents/MacOS/RecBoot0#
+
 CLd /Users/sebastienpeek/Desktop/RecBoot/build/Debug/RecBoot.app/Contents/MacOS/RecBoot normal x86_64
 s314727495.905925
 e314727496.301119
@@ -230,6 +523,12 @@ xnormal
 xx86_64
 lSLF07#2@88"Link /Users/sebastienpeek/Desktop/RecBoot/build/Debug/RecBoot.app/Contents/MacOS/RecBoot314727495#314727496#0(0"0(0#0#0"8603631200#607"    cd /Users/sebastienpeek/Desktop/RecBoot    setenv MACOSX_DEPLOYMENT_TARGET 10.6    "/Developer 4.2/usr/bin/gcc-4.2" -arch x86_64 -isysroot "/Developer 4.2/SDKs/MacOSX10.6.sdk" -L/Users/sebastienpeek/Desktop/RecBoot/build/Debug -F/Users/sebastienpeek/Desktop/RecBoot/build/Debug -F/Users/sebastienpeek/Desktop/RecBoot -filelist /Users/sebastienpeek/Desktop/RecBoot/build/RecBoot.build/Debug/RecBoot.build/Objects-normal/x86_64/RecBoot.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -framework MobileDevice -o /Users/sebastienpeek/Desktop/RecBoot/build/Debug/RecBoot.app/Contents/MacOS/RecBoot0#
 
+CLd /Users/sebastienpeek/Downloads/RecBoot/build/Debug/RecBoot.app/Contents/MacOS/RecBoot normal x86_64
+r0
+
+CProcessInfoPlistFile /Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/RecBoot.app/Contents/Info.plist RecBoot-Info.plist
+r0
+
 CProcessInfoPlistFile /Users/sebastienpeek/Desktop/RecBoot/build/Debug/RecBoot.app/Contents/Info.plist RecBoot-Info.plist
 s314725440.956081
 e314725440.960079
@@ -238,6 +537,22 @@ xProcessInfoPlistFile
 x/Users/sebastienpeek/Desktop/RecBoot/build/Debug/RecBoot.app/Contents/Info.plist
 xRecBoot-Info.plist
 lSLF07#2@26"Process RecBoot-Info.plist314725440#314725440#0(0"0(0#0#55"/Users/sebastienpeek/Desktop/RecBoot/RecBoot-Info.plist8622746976#304"    cd /Users/sebastienpeek/Desktop/RecBoot    builtin-infoPlistUtility RecBoot-Info.plist -genpkginfo /Users/sebastienpeek/Desktop/RecBoot/build/Debug/RecBoot.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/sebastienpeek/Desktop/RecBoot/build/Debug/RecBoot.app/Contents/Info.plist0#
+
+CProcessInfoPlistFile /Users/sebastienpeek/Downloads/RecBoot/build/Debug/RecBoot.app/Contents/Info.plist RecBoot-Info.plist
+r0
+
+CProcessPCH /var/folders/3T/3T4wSCAJE3Go3ruCwjtV5++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-ayraajhinwdhlyabqklwiknfncxf/RecBoot_Prefix.pch.gch RecBoot_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s314770989.090154
+e314770991.764786
+r1
+xProcessPCH
+x/var/folders/3T/3T4wSCAJE3Go3ruCwjtV5++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-ayraajhinwdhlyabqklwiknfncxf/RecBoot_Prefix.pch.gch
+xRecBoot_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile RecBoot_Prefix.pch314770989#314770991#0(0"0(0#0#60"/Users/Ari/Downloads/AriX-RecBoot/RecBoot/RecBoot_Prefix.pch7239376325023784960#1430"    cd /Users/Ari/Downloads/AriX-RecBoot/RecBoot    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/RecBoot.build/Debug/RecBoot.build/RecBoot-generated-files.hmap -I/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/RecBoot.build/Debug/RecBoot.build/RecBoot-own-target-headers.hmap -I/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/RecBoot.build/Debug/RecBoot.build/RecBoot-all-target-headers.hmap -iquote /Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/RecBoot.build/Debug/RecBoot.build/RecBoot-project-headers.hmap -F/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug -F/Users/Ari/Downloads/AriX-RecBoot/RecBoot -I/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/include -I/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/RecBoot.build/Debug/RecBoot.build/DerivedSources/x86_64 -I/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/RecBoot.build/Debug/RecBoot.build/DerivedSources -c /Users/Ari/Downloads/AriX-RecBoot/RecBoot/RecBoot_Prefix.pch -o /var/folders/3T/3T4wSCAJE3Go3ruCwjtV5++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-ayraajhinwdhlyabqklwiknfncxf/RecBoot_Prefix.pch.gch0#
 
 CProcessPCH /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-buwxdthkbwnbvccyecwuswkuyrqr/RecBoot_Prefix.pch.gch RecBoot_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s314722590.457863
@@ -255,6 +570,17 @@ lSLF07#2@29"Precompile RecBoot_Prefix.pch314722590#314722599#0(0"0(0#0#55"/Users
 CProcessPCH /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-ebaaizdnojrxdxdmgbgksjeajasj/RecBoot_Prefix.pch.gch RecBoot_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
 r0
 
+CProcessPCH /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-fncjxqadydvhixcabbqotnmidyjb/RecBoot_Prefix.pch.gch RecBoot_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CTouch /Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/RecBoot.app
+s314858849.875548
+e314858849.877836
+r1
+xTouch
+x/Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/RecBoot.app
+lSLF07#2@71"Touch /Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/RecBoot.app314858849#314858849#0(0"0(0#0#0"8626917728#137"    cd /Users/Ari/Downloads/AriX-RecBoot/RecBoot    /usr/bin/touch -c /Users/Ari/Downloads/AriX-RecBoot/RecBoot/build/Debug/RecBoot.app0#
+
 CTouch /Users/sebastienpeek/Desktop/RecBoot/build/Debug/RecBoot.app
 s314727496.301211
 e314727496.316178
@@ -262,4 +588,7 @@ r1
 xTouch
 x/Users/sebastienpeek/Desktop/RecBoot/build/Debug/RecBoot.app
 lSLF07#2@66"Touch /Users/sebastienpeek/Desktop/RecBoot/build/Debug/RecBoot.app314727496#314727496#0(0"0(0#0#0"8602794272#127"    cd /Users/sebastienpeek/Desktop/RecBoot    /usr/bin/touch -c /Users/sebastienpeek/Desktop/RecBoot/build/Debug/RecBoot.app0#
+
+CTouch /Users/sebastienpeek/Downloads/RecBoot/build/Debug/RecBoot.app
+r0
 

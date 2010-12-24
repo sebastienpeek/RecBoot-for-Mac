@@ -16,13 +16,14 @@
 	
 }
 
+- (IBAction)exitRec:(id)pId;
+- (IBAction)enterRec:(id)pId;
+
 - (void)populateData;
 - (void)dePopulateData;
+- (void)recoveryCallback;
 - (NSString *)getDeviceValue:(NSString *)value;
 
 @property (assign) IBOutlet NSWindow *window;
-
--(IBAction)exitRec:(id)pId;
--(IBAction)enterRec:(id)pId;
 
 @end
