@@ -1,0 +1,602 @@
+TRecBoot
+v7
+r0
+t315572616.721830
+cCheck dependencies
+cProcessInfoPlistFile /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/Info.plist RecBoot-Info.plist
+cCopyStringsFile /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+cCompileXIB /Users/sebastienpeek/RecBoot-for-Mac/English.lproj/MainMenu.xib
+cCpResource build/Release/RecBoot.app/Contents/Resources/irecovery irecovery
+cCpResource build/Release/RecBoot.app/Contents/Resources/Icon.icns Icon.icns
+cProcessPCH /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-dyfcncjgzcdrdudcotyfmcwlsjqq/RecBoot_Prefix.pch.gch RecBoot_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-dmvapedjbuskvaaffvhwfntyihgo/RecBoot_Prefix.pch.gch RecBoot_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-ebikjpukvngbbfbtyosvxihmvgsw/RecBoot_Prefix.pch.gch RecBoot_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RecBoot.build/Release/RecBoot.build/Objects-normal/x86_64/main.o /Users/sebastienpeek/RecBoot-for-Mac/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RecBoot.build/Release/RecBoot.build/Objects-normal/x86_64/RecBootAppDelegate.o /Users/sebastienpeek/RecBoot-for-Mac/RecBootAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/x86_64/RecBoot normal x86_64
+cCompileC build/RecBoot.build/Release/RecBoot.build/Objects-normal/i386/main.o /Users/sebastienpeek/RecBoot-for-Mac/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RecBoot.build/Release/RecBoot.build/Objects-normal/i386/RecBootAppDelegate.o /Users/sebastienpeek/RecBoot-for-Mac/RecBootAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/i386/RecBoot normal i386
+cCompileC build/RecBoot.build/Release/RecBoot.build/Objects-normal/ppc/main.o /Users/sebastienpeek/RecBoot-for-Mac/main.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RecBoot.build/Release/RecBoot.build/Objects-normal/ppc/RecBootAppDelegate.o /Users/sebastienpeek/RecBoot-for-Mac/RecBootAppDelegate.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cLd /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/ppc/RecBoot normal ppc
+cCreateUniversalBinary /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/MacOS/RecBoot normal "x86_64 i386 ppc"
+cGenerateDSYMFile /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app.dSYM /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/MacOS/RecBoot
+cPBXCp build/Release/RecBoot.app/Contents/Frameworks/Sparkle.framework Sparkle.framework
+cTouch /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app
+
+N/Developer 4.2/SDKs/MacOSX10.6.sdk
+c000000004CAA740B00000000000000EE
+t1286239243
+s238
+
+N/Developer 4.2/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Developer 4.2/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h
+c000000004C239DAB0000000000000AF4
+t1277402539
+s2804
+
+N/Developer 4.2/SDKs/MacOSX10.6.sdk/usr/include/mach/error.h
+c000000004C2399470000000000000F22
+t1277401415
+s3874
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/Users/sebastienpeek/Downloads/andymatuschak-Sparkle-00b6726/build/Debug/Sparkle.framework
+c000000004D1EF27200000000000000EE
+t1293873778
+s238
+
+N/Users/sebastienpeek/Downloads/andymatuschak-Sparkle-00b6726/build/Debug/Sparkle.framework/Sparkle
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/sebastienpeek/RecBoot-for-Mac/English.lproj/InfoPlist.strings
+c000000004D1210E2000000000000002D
+t1293029602
+s45
+
+N/Users/sebastienpeek/RecBoot-for-Mac/English.lproj/MainMenu.xib
+c000000004D1EFCA4000000000000CA78
+t1293876388
+s51832
+
+N/Users/sebastienpeek/RecBoot-for-Mac/Icon.icns
+c000000004D14A9C7000000000002B7A6
+t1293199815
+s178086
+
+N/Users/sebastienpeek/RecBoot-for-Mac/MobileDevice.framework/MobileDevice
+c000000004D12116D0000000000030A58
+t1293029741
+s199256
+
+N/Users/sebastienpeek/RecBoot-for-Mac/MobileDevice.h
+c000000004D14A9C7000000000000314C
+t1293199815
+s12620
+i<CoreFoundation.h>
+i<CoreFoundation/CoreFoundation.h>
+i<mach/error.h>
+
+N/Users/sebastienpeek/RecBoot-for-Mac/RecBootAppDelegate.h
+c000000004D14A9C7000000000000022E
+t1293199815
+s558
+i<Cocoa/Cocoa.h>
+i"MobileDevice.h"
+
+N/Users/sebastienpeek/RecBoot-for-Mac/RecBootAppDelegate.m
+c000000004D1EF4EE0000000000001383
+t1293874414
+s4995
+i"RecBootAppDelegate.h"
+
+N/Users/sebastienpeek/RecBoot-for-Mac/RecBoot_Prefix.pch
+c000000004D14A9C70000000000000091
+t1293199815
+s145
+i<Cocoa/Cocoa.h>
+
+N/Users/sebastienpeek/RecBoot-for-Mac/Sparkle.framework
+c000000004D1EFB5600000000000000CC
+t1293876054
+s204
+
+N/Users/sebastienpeek/RecBoot-for-Mac/Sparkle.framework/Sparkle
+c0000000048CC84C200000000000712B4
+t1221362882
+s463540
+
+N/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/i386/RecBoot
+t1293876131
+s20588
+
+N/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/i386/RecBoot.LinkFileList
+c000000004D18384900000000000000E2
+t1293432905
+s226
+
+N/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/i386/RecBootAppDelegate.o
+t1293874480
+s29784
+
+N/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/i386/main.o
+t1293874480
+s4848
+
+N/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/ppc/RecBoot
+t1293876132
+s19960
+
+N/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/ppc/RecBoot.LinkFileList
+c000000004D18384900000000000000E0
+t1293432905
+s224
+
+N/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/ppc/RecBootAppDelegate.o
+t1293874480
+s31072
+
+N/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/ppc/main.o
+t1293874480
+s4876
+
+N/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/x86_64/RecBoot
+t1293876131
+s21944
+
+N/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/x86_64/RecBoot.LinkFileList
+c000000004D18384900000000000000E6
+t1293432905
+s230
+
+N/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/x86_64/RecBootAppDelegate.o
+t1293874479
+s43252
+
+N/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/x86_64/main.o
+t1293874479
+s5048
+
+N/Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app
+t1293879710
+s102
+
+N/Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app.dSYM
+t1293876132
+s102
+
+N/Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/Frameworks/Sparkle.framework
+t1293876518
+s204
+
+N/Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/Info.plist
+t1293879710
+s1014
+
+N/Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/MacOS/RecBoot
+t1293876132
+s73208
+
+N/Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/PkgInfo
+t1293879710
+s8
+
+N/Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1293432920
+s92
+
+N/Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/Resources/English.lproj/MainMenu.nib
+t1293876393
+s6938
+
+N/Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/Resources/Icon.icns
+t1293432921
+s178086
+
+N/Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/Resources/Sparkle.framework
+t1293876132
+s204
+
+N/Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/Resources/irecovery
+t1293432921
+s44628
+
+N/Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/Resources/irecovery license
+t2
+s0
+
+N/Users/sebastienpeek/RecBoot-for-Mac/irecovery
+c000000004D14A9C7000000000000AE54
+t1293199815
+s44628
+
+N/Users/sebastienpeek/RecBoot-for-Mac/irecovery license
+c000000004D1E761D0000000000000000
+t1293841949
+s0
+
+N/Users/sebastienpeek/RecBoot-for-Mac/main.m
+c000000004D14A9C700000000000000F8
+t1293199815
+s248
+i<Cocoa/Cocoa.h>
+
+N/var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-alewfjbtypjexpdgrxrmclvjlaoc/RecBoot_Prefix.pch.gch
+t1293433028
+s52967184
+
+N/var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-bxnfifmgtcfibjbzxgdqqygglzmh/RecBoot_Prefix.pch.gch
+t1293433033
+s52831824
+
+N/var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-dmvapedjbuskvaaffvhwfntyihgo/RecBoot_Prefix.pch.gch
+t1293874470
+s55650096
+
+N/var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-dyfcncjgzcdrdudcotyfmcwlsjqq/RecBoot_Prefix.pch.gch
+t1293874470
+s53032720
+
+N/var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-ebikjpukvngbbfbtyosvxihmvgsw/RecBoot_Prefix.pch.gch
+t1293874477
+s52885072
+
+N/var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-etotynabojrtvyhdqnknjddyxwcj/RecBoot_Prefix.pch.gch
+t1293845504
+s52885072
+
+N/var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-fsyplbkhldgnbebjnrrkqvpndldv/RecBoot_Prefix.pch.gch
+t1293433028
+s55596848
+
+N/var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-godkqbshkvnlnbdqtkkrhixraezf/RecBoot_Prefix.pch.gch
+t1293845499
+s53032720
+
+N/var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-hbhfvhpxxfvifvacbitqrxjwsfll/RecBoot_Prefix.pch.gch
+t1293845499
+s55650096
+
+NRecBoot-Info.plist
+c000000004D1F099D000000000000043A
+t1293879709
+s1082
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies315572616#315572616#0(0"0(0#1#0"8614932096#0"0#
+
+CCompileC build/RecBoot.build/Release/RecBoot.build/Objects-normal/i386/RecBootAppDelegate.o /Users/sebastienpeek/RecBoot-for-Mac/RecBootAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s315567280.027071
+e315567280.267513
+r1
+xCompileC
+xbuild/RecBoot.build/Release/RecBoot.build/Objects-normal/i386/RecBootAppDelegate.o
+x/Users/sebastienpeek/RecBoot-for-Mac/RecBootAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/sebastienpeek/RecBoot-for-Mac/RecBootAppDelegate.m315567280#315567280#0(0"0(0#0#57"/Users/sebastienpeek/RecBoot-for-Mac/RecBootAppDelegate.m8623537024#1631"    cd /Users/sebastienpeek/RecBoot-for-Mac    setenv LANG en_US.US-ASCII    "/Developer 4.2/usr/bin/gcc-4.2" -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer 4.2/SDKs/MacOSX10.6.sdk" -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-generated-files.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-own-target-headers.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-all-target-headers.hmap -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-project-headers.hmap -F/Users/sebastienpeek/RecBoot-for-Mac/build/Release -F/Users/sebastienpeek/RecBoot-for-Mac -F/Users/sebastienpeek/RecBoot-for-Mac/../Downloads/andymatuschak-Sparkle-00b6726/build/Debug -I/Users/sebastienpeek/RecBoot-for-Mac/build/Release/include -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources/i386 -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources -include /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-dmvapedjbuskvaaffvhwfntyihgo/RecBoot_Prefix.pch -c /Users/sebastienpeek/RecBoot-for-Mac/RecBootAppDelegate.m -o /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/i386/RecBootAppDelegate.o0#
+
+CCompileC build/RecBoot.build/Release/RecBoot.build/Objects-normal/i386/main.o /Users/sebastienpeek/RecBoot-for-Mac/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s315567279.345924
+e315567280.026967
+r1
+xCompileC
+xbuild/RecBoot.build/Release/RecBoot.build/Objects-normal/i386/main.o
+x/Users/sebastienpeek/RecBoot-for-Mac/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@51"Compile /Users/sebastienpeek/RecBoot-for-Mac/main.m315567279#315567280#0(0"0(0#0#43"/Users/sebastienpeek/RecBoot-for-Mac/main.m8617086016#1603"    cd /Users/sebastienpeek/RecBoot-for-Mac    setenv LANG en_US.US-ASCII    "/Developer 4.2/usr/bin/gcc-4.2" -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer 4.2/SDKs/MacOSX10.6.sdk" -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-generated-files.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-own-target-headers.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-all-target-headers.hmap -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-project-headers.hmap -F/Users/sebastienpeek/RecBoot-for-Mac/build/Release -F/Users/sebastienpeek/RecBoot-for-Mac -F/Users/sebastienpeek/RecBoot-for-Mac/../Downloads/andymatuschak-Sparkle-00b6726/build/Debug -I/Users/sebastienpeek/RecBoot-for-Mac/build/Release/include -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources/i386 -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources -include /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-dmvapedjbuskvaaffvhwfntyihgo/RecBoot_Prefix.pch -c /Users/sebastienpeek/RecBoot-for-Mac/main.m -o /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/i386/main.o0#
+
+CCompileC build/RecBoot.build/Release/RecBoot.build/Objects-normal/ppc/RecBootAppDelegate.o /Users/sebastienpeek/RecBoot-for-Mac/RecBootAppDelegate.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s315567280.463070
+e315567280.844153
+r1
+xCompileC
+xbuild/RecBoot.build/Release/RecBoot.build/Objects-normal/ppc/RecBootAppDelegate.o
+x/Users/sebastienpeek/RecBoot-for-Mac/RecBootAppDelegate.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/sebastienpeek/RecBoot-for-Mac/RecBootAppDelegate.m315567280#315567280#0(0"0(0#0#57"/Users/sebastienpeek/RecBoot-for-Mac/RecBootAppDelegate.m8615905280#1638"    cd /Users/sebastienpeek/RecBoot-for-Mac    setenv LANG en_US.US-ASCII    "/Developer 4.2/usr/bin/gcc-4.2" -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer 4.2/SDKs/MacOSX10.6.sdk" -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-generated-files.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-own-target-headers.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-all-target-headers.hmap -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-project-headers.hmap -F/Users/sebastienpeek/RecBoot-for-Mac/build/Release -F/Users/sebastienpeek/RecBoot-for-Mac -F/Users/sebastienpeek/RecBoot-for-Mac/../Downloads/andymatuschak-Sparkle-00b6726/build/Debug -I/Users/sebastienpeek/RecBoot-for-Mac/build/Release/include -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources/ppc -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources -include /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-ebikjpukvngbbfbtyosvxihmvgsw/RecBoot_Prefix.pch -c /Users/sebastienpeek/RecBoot-for-Mac/RecBootAppDelegate.m -o /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/ppc/RecBootAppDelegate.o0#
+
+CCompileC build/RecBoot.build/Release/RecBoot.build/Objects-normal/ppc/main.o /Users/sebastienpeek/RecBoot-for-Mac/main.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s315567280.460535
+e315567280.748463
+r1
+xCompileC
+xbuild/RecBoot.build/Release/RecBoot.build/Objects-normal/ppc/main.o
+x/Users/sebastienpeek/RecBoot-for-Mac/main.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@51"Compile /Users/sebastienpeek/RecBoot-for-Mac/main.m315567280#315567280#0(0"0(0#0#43"/Users/sebastienpeek/RecBoot-for-Mac/main.m8616042848#1610"    cd /Users/sebastienpeek/RecBoot-for-Mac    setenv LANG en_US.US-ASCII    "/Developer 4.2/usr/bin/gcc-4.2" -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer 4.2/SDKs/MacOSX10.6.sdk" -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-generated-files.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-own-target-headers.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-all-target-headers.hmap -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-project-headers.hmap -F/Users/sebastienpeek/RecBoot-for-Mac/build/Release -F/Users/sebastienpeek/RecBoot-for-Mac -F/Users/sebastienpeek/RecBoot-for-Mac/../Downloads/andymatuschak-Sparkle-00b6726/build/Debug -I/Users/sebastienpeek/RecBoot-for-Mac/build/Release/include -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources/ppc -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources -include /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-ebikjpukvngbbfbtyosvxihmvgsw/RecBoot_Prefix.pch -c /Users/sebastienpeek/RecBoot-for-Mac/main.m -o /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/ppc/main.o0#
+
+CCompileC build/RecBoot.build/Release/RecBoot.build/Objects-normal/x86_64/RecBootAppDelegate.o /Users/sebastienpeek/RecBoot-for-Mac/RecBootAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s315567278.133618
+e315567279.641244
+r1
+xCompileC
+xbuild/RecBoot.build/Release/RecBoot.build/Objects-normal/x86_64/RecBootAppDelegate.o
+x/Users/sebastienpeek/RecBoot-for-Mac/RecBootAppDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/sebastienpeek/RecBoot-for-Mac/RecBootAppDelegate.m315567278#315567279#0(0"0(0#0#57"/Users/sebastienpeek/RecBoot-for-Mac/RecBootAppDelegate.m8616821920#1637"    cd /Users/sebastienpeek/RecBoot-for-Mac    setenv LANG en_US.US-ASCII    "/Developer 4.2/usr/bin/gcc-4.2" -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer 4.2/SDKs/MacOSX10.6.sdk" -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-generated-files.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-own-target-headers.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-all-target-headers.hmap -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-project-headers.hmap -F/Users/sebastienpeek/RecBoot-for-Mac/build/Release -F/Users/sebastienpeek/RecBoot-for-Mac -F/Users/sebastienpeek/RecBoot-for-Mac/../Downloads/andymatuschak-Sparkle-00b6726/build/Debug -I/Users/sebastienpeek/RecBoot-for-Mac/build/Release/include -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources/x86_64 -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources -include /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-dyfcncjgzcdrdudcotyfmcwlsjqq/RecBoot_Prefix.pch -c /Users/sebastienpeek/RecBoot-for-Mac/RecBootAppDelegate.m -o /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/x86_64/RecBootAppDelegate.o0#
+
+CCompileC build/RecBoot.build/Release/RecBoot.build/Objects-normal/x86_64/main.o /Users/sebastienpeek/RecBoot-for-Mac/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s315567278.007507
+e315567279.345813
+r1
+xCompileC
+xbuild/RecBoot.build/Release/RecBoot.build/Objects-normal/x86_64/main.o
+x/Users/sebastienpeek/RecBoot-for-Mac/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@51"Compile /Users/sebastienpeek/RecBoot-for-Mac/main.m315567278#315567279#0(0"0(0#0#43"/Users/sebastienpeek/RecBoot-for-Mac/main.m8623820192#1609"    cd /Users/sebastienpeek/RecBoot-for-Mac    setenv LANG en_US.US-ASCII    "/Developer 4.2/usr/bin/gcc-4.2" -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer 4.2/SDKs/MacOSX10.6.sdk" -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-generated-files.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-own-target-headers.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-all-target-headers.hmap -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-project-headers.hmap -F/Users/sebastienpeek/RecBoot-for-Mac/build/Release -F/Users/sebastienpeek/RecBoot-for-Mac -F/Users/sebastienpeek/RecBoot-for-Mac/../Downloads/andymatuschak-Sparkle-00b6726/build/Debug -I/Users/sebastienpeek/RecBoot-for-Mac/build/Release/include -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources/x86_64 -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources -include /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-dyfcncjgzcdrdudcotyfmcwlsjqq/RecBoot_Prefix.pch -c /Users/sebastienpeek/RecBoot-for-Mac/main.m -o /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/x86_64/main.o0#
+
+CCompileXIB /Users/sebastienpeek/RecBoot-for-Mac/English.lproj/MainMenu.xib
+s315569192.380991
+e315569193.744288
+r1
+xCompileXIB
+x/Users/sebastienpeek/RecBoot-for-Mac/English.lproj/MainMenu.xib
+lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib315569192#315569193#0(0"0(0#0#63"/Users/sebastienpeek/RecBoot-for-Mac/English.lproj/MainMenu.xib8610780064#372"    cd /Users/sebastienpeek/RecBoot-for-Mac    "/Developer 4.2/usr/bin/ibtool" --errors --warnings --notices --output-format human-readable-text --compile /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/Resources/English.lproj/MainMenu.nib /Users/sebastienpeek/RecBoot-for-Mac/English.lproj/MainMenu.xib --sdk "/Developer 4.2/SDKs/MacOSX10.6.sdk"0#
+
+CCopyStringsFile /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+s315125706.415000
+e315125720.362523
+r1
+xCopyStringsFile
+x/Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF07#2@36"Copy English.lproj/InfoPlist.strings315125706#315125720#0(0"0(0#0#68"/Users/sebastienpeek/RecBoot-for-Mac/English.lproj/InfoPlist.strings8613325632#369"    cd /Users/sebastienpeek/RecBoot-for-Mac    setenv ICONV /usr/bin/iconv    "/Developer 4.2/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings" --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/Resources/English.lproj0#
+
+CCpResource "build/Release/RecBoot.app/Contents/Resources/irecovery license" "irecovery license"
+r0
+
+CCpResource build/Release/RecBoot.app/Contents/Resources/Icon.icns Icon.icns
+s315125720.424648
+e315125722.403878
+r1
+xCpResource
+xbuild/Release/RecBoot.app/Contents/Resources/Icon.icns
+xIcon.icns
+lSLF07#2@14"Copy Icon.icns315125720#315125722#0(0"0(0#0#46"/Users/sebastienpeek/RecBoot-for-Mac/Icon.icns8613612800#362"    cd /Users/sebastienpeek/RecBoot-for-Mac    "/Developer 4.2/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp" -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/sebastienpeek/RecBoot-for-Mac/Icon.icns /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/Resources0#
+
+CCpResource build/Release/RecBoot.app/Contents/Resources/irecovery irecovery
+s315125720.362712
+e315125721.941536
+r1
+xCpResource
+xbuild/Release/RecBoot.app/Contents/Resources/irecovery
+xirecovery
+lSLF07#2@14"Copy irecovery315125720#315125721#0(0"0(0#0#46"/Users/sebastienpeek/RecBoot-for-Mac/irecovery8612110688#362"    cd /Users/sebastienpeek/RecBoot-for-Mac    "/Developer 4.2/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp" -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/sebastienpeek/RecBoot-for-Mac/irecovery /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/Resources0#
+
+CCreateUniversalBinary /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/MacOS/RecBoot normal "x86_64 i386 ppc"
+s315568932.328952
+e315568932.372898
+r1
+xCreateUniversalBinary
+x/Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/MacOS/RecBoot
+xnormal
+xx86_64 i386 ppc
+lSLF07#2@95"CreateUniversalBinary build/Release/RecBoot.app/Contents/MacOS/RecBoot normal "x86_64 i386 ppc"315568932#315568932#0(0"0(0#0#52"/Users/sebastienpeek/RecBoot-for-Mac/x86_64 i386 ppc8606824448#486"    cd /Users/sebastienpeek/RecBoot-for-Mac    /usr/bin/lipo -create /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/x86_64/RecBoot /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/i386/RecBoot /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/ppc/RecBoot -output /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/MacOS/RecBoot0#
+
+CGenerateDSYMFile /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app.dSYM /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/MacOS/RecBoot
+s315568932.373147
+e315568932.650860
+r1
+xGenerateDSYMFile
+x/Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app.dSYM
+x/Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/MacOS/RecBoot
+lSLF07#2@96"GenerateDSYMFile build/Release/RecBoot.app.dSYM build/Release/RecBoot.app/Contents/MacOS/RecBoot315568932#315568932#0(0"0(0#0#85"/Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/MacOS/RecBoot8609734368#239"    cd /Users/sebastienpeek/RecBoot-for-Mac    "/Developer 4.2/usr/bin/dsymutil" /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/MacOS/RecBoot -o /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app.dSYM0#
+
+CLd /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/i386/RecBoot normal i386
+s315568930.894167
+e315568931.917846
+r1
+xLd
+x/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/i386/RecBoot
+xnormal
+xi386
+lSLF07#2@111"Link /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/i386/RecBoot315568930#315568931#0(0"0(0#0#0"8613245216#745"    cd /Users/sebastienpeek/RecBoot-for-Mac    setenv MACOSX_DEPLOYMENT_TARGET 10.5    "/Developer 4.2/usr/bin/gcc-4.2" -arch i386 -isysroot "/Developer 4.2/SDKs/MacOSX10.6.sdk" -L/Users/sebastienpeek/RecBoot-for-Mac/build/Release -F/Users/sebastienpeek/RecBoot-for-Mac/build/Release -F/Users/sebastienpeek/RecBoot-for-Mac -F/Users/sebastienpeek/RecBoot-for-Mac/../Downloads/andymatuschak-Sparkle-00b6726/build/Debug -filelist /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/i386/RecBoot.LinkFileList -mmacosx-version-min=10.5 -framework Cocoa -framework MobileDevice -framework Sparkle -o /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/i386/RecBoot0#
+
+CLd /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/ppc/RecBoot normal ppc
+s315568931.918278
+e315568932.328770
+r1
+xLd
+x/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/ppc/RecBoot
+xnormal
+xppc
+lSLF07#2@110"Link /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/ppc/RecBoot315568931#315568932#0(0"0(0#0#0"8614633824#742"    cd /Users/sebastienpeek/RecBoot-for-Mac    setenv MACOSX_DEPLOYMENT_TARGET 10.5    "/Developer 4.2/usr/bin/gcc-4.2" -arch ppc -isysroot "/Developer 4.2/SDKs/MacOSX10.6.sdk" -L/Users/sebastienpeek/RecBoot-for-Mac/build/Release -F/Users/sebastienpeek/RecBoot-for-Mac/build/Release -F/Users/sebastienpeek/RecBoot-for-Mac -F/Users/sebastienpeek/RecBoot-for-Mac/../Downloads/andymatuschak-Sparkle-00b6726/build/Debug -filelist /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/ppc/RecBoot.LinkFileList -mmacosx-version-min=10.5 -framework Cocoa -framework MobileDevice -framework Sparkle -o /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/ppc/RecBoot0#
+
+CLd /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/x86_64/RecBoot normal x86_64
+s315568930.893112
+e315568931.938937
+r1
+xLd
+x/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/x86_64/RecBoot
+xnormal
+xx86_64
+lSLF07#2@113"Link /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/x86_64/RecBoot315568930#315568931#0(0"0(0#0#0"8613372224#751"    cd /Users/sebastienpeek/RecBoot-for-Mac    setenv MACOSX_DEPLOYMENT_TARGET 10.5    "/Developer 4.2/usr/bin/gcc-4.2" -arch x86_64 -isysroot "/Developer 4.2/SDKs/MacOSX10.6.sdk" -L/Users/sebastienpeek/RecBoot-for-Mac/build/Release -F/Users/sebastienpeek/RecBoot-for-Mac/build/Release -F/Users/sebastienpeek/RecBoot-for-Mac -F/Users/sebastienpeek/RecBoot-for-Mac/../Downloads/andymatuschak-Sparkle-00b6726/build/Debug -filelist /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/x86_64/RecBoot.LinkFileList -mmacosx-version-min=10.5 -framework Cocoa -framework MobileDevice -framework Sparkle -o /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/Objects-normal/x86_64/RecBoot0#
+
+CLd /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/MacOS/RecBoot normal x86_64
+r0
+
+CPBXCp build/Release/RecBoot.app/Contents/Frameworks/Sparkle.framework Sparkle.framework
+s315569318.363002
+e315569318.557127
+r1
+xPBXCp
+xbuild/Release/RecBoot.app/Contents/Frameworks/Sparkle.framework
+xSparkle.framework
+lSLF07#2@22"Copy Sparkle.framework315569318#315569318#0(0"0(0#0#54"/Users/sebastienpeek/RecBoot-for-Mac/Sparkle.framework8614694912#371"    cd /Users/sebastienpeek/RecBoot-for-Mac    "/Developer 4.2/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp" -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/sebastienpeek/RecBoot-for-Mac/Sparkle.framework /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/Frameworks0#
+
+CPBXCp build/Release/RecBoot.app/Contents/Resources/Sparkle.framework /Users/sebastienpeek/Downloads/andymatuschak-Sparkle-00b6726/build/Debug/Sparkle.framework
+r0
+
+CPBXCp build/Release/RecBoot.app/Contents/Resources/Sparkle.framework Sparkle.framework
+s315568932.651109
+e315568932.957521
+r1
+xPBXCp
+xbuild/Release/RecBoot.app/Contents/Resources/Sparkle.framework
+xSparkle.framework
+lSLF07#2@22"Copy Sparkle.framework315568932#315568932#0(0"0(0#0#54"/Users/sebastienpeek/RecBoot-for-Mac/Sparkle.framework8612256576#370"    cd /Users/sebastienpeek/RecBoot-for-Mac    "/Developer 4.2/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp" -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/sebastienpeek/RecBoot-for-Mac/Sparkle.framework /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/Resources0#
+
+CProcessInfoPlistFile /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/Info.plist RecBoot-Info.plist
+s315572510.246523
+e315572510.255985
+r1
+xProcessInfoPlistFile
+x/Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/Info.plist
+xRecBoot-Info.plist
+lSLF07#2@26"Process RecBoot-Info.plist315572510#315572510#0(0"0(0#0#55"/Users/sebastienpeek/RecBoot-for-Mac/RecBoot-Info.plist8603625440#308"    cd /Users/sebastienpeek/RecBoot-for-Mac    builtin-infoPlistUtility RecBoot-Info.plist -genpkginfo /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app/Contents/Info.plist0#
+
+CProcessPCH /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-alewfjbtypjexpdgrxrmclvjlaoc/RecBoot_Prefix.pch.gch RecBoot_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s315125741.258038
+e315125829.349509
+r1
+xProcessPCH
+x/var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-alewfjbtypjexpdgrxrmclvjlaoc/RecBoot_Prefix.pch.gch
+xRecBoot_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile RecBoot_Prefix.pch315125741#315125829#0(0"0(0#0#55"/Users/sebastienpeek/RecBoot-for-Mac/RecBoot_Prefix.pch8616045248#1421"    cd /Users/sebastienpeek/RecBoot-for-Mac    setenv LANG en_US.US-ASCII    "/Developer 4.2/usr/bin/gcc-4.2" -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer 4.2/SDKs/MacOSX10.6.sdk" -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-generated-files.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-own-target-headers.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-all-target-headers.hmap -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-project-headers.hmap -F/Users/sebastienpeek/RecBoot-for-Mac/build/Release -F/Users/sebastienpeek/RecBoot-for-Mac -I/Users/sebastienpeek/RecBoot-for-Mac/build/Release/include -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources/x86_64 -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources -c /Users/sebastienpeek/RecBoot-for-Mac/RecBoot_Prefix.pch -o /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-alewfjbtypjexpdgrxrmclvjlaoc/RecBoot_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-bxnfifmgtcfibjbzxgdqqygglzmh/RecBoot_Prefix.pch.gch RecBoot_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+s315125829.350648
+e315125833.645882
+r1
+xProcessPCH
+x/var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-bxnfifmgtcfibjbzxgdqqygglzmh/RecBoot_Prefix.pch.gch
+xRecBoot_Prefix.pch
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile RecBoot_Prefix.pch315125829#315125833#0(0"0(0#0#55"/Users/sebastienpeek/RecBoot-for-Mac/RecBoot_Prefix.pch8613730048#1425"    cd /Users/sebastienpeek/RecBoot-for-Mac    setenv LANG en_US.US-ASCII    "/Developer 4.2/usr/bin/gcc-4.2" -x objective-c-header -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer 4.2/SDKs/MacOSX10.6.sdk" -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-generated-files.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-own-target-headers.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-all-target-headers.hmap -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-project-headers.hmap -F/Users/sebastienpeek/RecBoot-for-Mac/build/Release -F/Users/sebastienpeek/RecBoot-for-Mac -I/Users/sebastienpeek/RecBoot-for-Mac/build/Release/include -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources/ppc -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources -c /Users/sebastienpeek/RecBoot-for-Mac/RecBoot_Prefix.pch -o /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-bxnfifmgtcfibjbzxgdqqygglzmh/RecBoot_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-dmvapedjbuskvaaffvhwfntyihgo/RecBoot_Prefix.pch.gch RecBoot_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s315567215.752597
+e315567270.612647
+r1
+xProcessPCH
+x/var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-dmvapedjbuskvaaffvhwfntyihgo/RecBoot_Prefix.pch.gch
+xRecBoot_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile RecBoot_Prefix.pch315567215#315567270#0(0"0(0#0#55"/Users/sebastienpeek/RecBoot-for-Mac/RecBoot_Prefix.pch8615728960#1511"    cd /Users/sebastienpeek/RecBoot-for-Mac    setenv LANG en_US.US-ASCII    "/Developer 4.2/usr/bin/gcc-4.2" -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer 4.2/SDKs/MacOSX10.6.sdk" -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-generated-files.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-own-target-headers.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-all-target-headers.hmap -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-project-headers.hmap -F/Users/sebastienpeek/RecBoot-for-Mac/build/Release -F/Users/sebastienpeek/RecBoot-for-Mac -F/Users/sebastienpeek/RecBoot-for-Mac/../Downloads/andymatuschak-Sparkle-00b6726/build/Debug -I/Users/sebastienpeek/RecBoot-for-Mac/build/Release/include -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources/i386 -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources -c /Users/sebastienpeek/RecBoot-for-Mac/RecBoot_Prefix.pch -o /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-dmvapedjbuskvaaffvhwfntyihgo/RecBoot_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-dyfcncjgzcdrdudcotyfmcwlsjqq/RecBoot_Prefix.pch.gch RecBoot_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s315567215.751623
+e315567270.630275
+r1
+xProcessPCH
+x/var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-dyfcncjgzcdrdudcotyfmcwlsjqq/RecBoot_Prefix.pch.gch
+xRecBoot_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile RecBoot_Prefix.pch315567215#315567270#0(0"0(0#0#55"/Users/sebastienpeek/RecBoot-for-Mac/RecBoot_Prefix.pch8615838976#1515"    cd /Users/sebastienpeek/RecBoot-for-Mac    setenv LANG en_US.US-ASCII    "/Developer 4.2/usr/bin/gcc-4.2" -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer 4.2/SDKs/MacOSX10.6.sdk" -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-generated-files.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-own-target-headers.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-all-target-headers.hmap -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-project-headers.hmap -F/Users/sebastienpeek/RecBoot-for-Mac/build/Release -F/Users/sebastienpeek/RecBoot-for-Mac -F/Users/sebastienpeek/RecBoot-for-Mac/../Downloads/andymatuschak-Sparkle-00b6726/build/Debug -I/Users/sebastienpeek/RecBoot-for-Mac/build/Release/include -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources/x86_64 -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources -c /Users/sebastienpeek/RecBoot-for-Mac/RecBoot_Prefix.pch -o /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-dyfcncjgzcdrdudcotyfmcwlsjqq/RecBoot_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-ebikjpukvngbbfbtyosvxihmvgsw/RecBoot_Prefix.pch.gch RecBoot_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+s315567270.613149
+e315567278.007286
+r1
+xProcessPCH
+x/var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-ebikjpukvngbbfbtyosvxihmvgsw/RecBoot_Prefix.pch.gch
+xRecBoot_Prefix.pch
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile RecBoot_Prefix.pch315567270#315567278#0(0"0(0#0#55"/Users/sebastienpeek/RecBoot-for-Mac/RecBoot_Prefix.pch8630502496#1519"    cd /Users/sebastienpeek/RecBoot-for-Mac    setenv LANG en_US.US-ASCII    "/Developer 4.2/usr/bin/gcc-4.2" -x objective-c-header -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer 4.2/SDKs/MacOSX10.6.sdk" -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-generated-files.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-own-target-headers.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-all-target-headers.hmap -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-project-headers.hmap -F/Users/sebastienpeek/RecBoot-for-Mac/build/Release -F/Users/sebastienpeek/RecBoot-for-Mac -F/Users/sebastienpeek/RecBoot-for-Mac/../Downloads/andymatuschak-Sparkle-00b6726/build/Debug -I/Users/sebastienpeek/RecBoot-for-Mac/build/Release/include -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources/ppc -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources -c /Users/sebastienpeek/RecBoot-for-Mac/RecBoot_Prefix.pch -o /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-ebikjpukvngbbfbtyosvxihmvgsw/RecBoot_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-etotynabojrtvyhdqnknjddyxwcj/RecBoot_Prefix.pch.gch RecBoot_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+s315538299.292759
+e315538304.384717
+r1
+xProcessPCH
+x/var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-etotynabojrtvyhdqnknjddyxwcj/RecBoot_Prefix.pch.gch
+xRecBoot_Prefix.pch
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile RecBoot_Prefix.pch315538299#315538304#0(0"0(0#0#55"/Users/sebastienpeek/RecBoot-for-Mac/RecBoot_Prefix.pch8619255456#1425"    cd /Users/sebastienpeek/RecBoot-for-Mac    setenv LANG en_US.US-ASCII    "/Developer 4.2/usr/bin/gcc-4.2" -x objective-c-header -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer 4.2/SDKs/MacOSX10.6.sdk" -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-generated-files.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-own-target-headers.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-all-target-headers.hmap -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-project-headers.hmap -F/Users/sebastienpeek/RecBoot-for-Mac/build/Release -F/Users/sebastienpeek/RecBoot-for-Mac -I/Users/sebastienpeek/RecBoot-for-Mac/build/Release/include -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources/ppc -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources -c /Users/sebastienpeek/RecBoot-for-Mac/RecBoot_Prefix.pch -o /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-etotynabojrtvyhdqnknjddyxwcj/RecBoot_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-fsyplbkhldgnbebjnrrkqvpndldv/RecBoot_Prefix.pch.gch RecBoot_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s315125741.667775
+e315125829.350545
+r1
+xProcessPCH
+x/var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-fsyplbkhldgnbebjnrrkqvpndldv/RecBoot_Prefix.pch.gch
+xRecBoot_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile RecBoot_Prefix.pch315125741#315125829#0(0"0(0#0#55"/Users/sebastienpeek/RecBoot-for-Mac/RecBoot_Prefix.pch8611819328#1417"    cd /Users/sebastienpeek/RecBoot-for-Mac    setenv LANG en_US.US-ASCII    "/Developer 4.2/usr/bin/gcc-4.2" -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer 4.2/SDKs/MacOSX10.6.sdk" -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-generated-files.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-own-target-headers.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-all-target-headers.hmap -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-project-headers.hmap -F/Users/sebastienpeek/RecBoot-for-Mac/build/Release -F/Users/sebastienpeek/RecBoot-for-Mac -I/Users/sebastienpeek/RecBoot-for-Mac/build/Release/include -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources/i386 -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources -c /Users/sebastienpeek/RecBoot-for-Mac/RecBoot_Prefix.pch -o /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-fsyplbkhldgnbebjnrrkqvpndldv/RecBoot_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-godkqbshkvnlnbdqtkkrhixraezf/RecBoot_Prefix.pch.gch RecBoot_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s315538263.067093
+e315538299.292373
+r1
+xProcessPCH
+x/var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-godkqbshkvnlnbdqtkkrhixraezf/RecBoot_Prefix.pch.gch
+xRecBoot_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile RecBoot_Prefix.pch315538263#315538299#0(0"0(0#0#55"/Users/sebastienpeek/RecBoot-for-Mac/RecBoot_Prefix.pch8619417536#1421"    cd /Users/sebastienpeek/RecBoot-for-Mac    setenv LANG en_US.US-ASCII    "/Developer 4.2/usr/bin/gcc-4.2" -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer 4.2/SDKs/MacOSX10.6.sdk" -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-generated-files.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-own-target-headers.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-all-target-headers.hmap -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-project-headers.hmap -F/Users/sebastienpeek/RecBoot-for-Mac/build/Release -F/Users/sebastienpeek/RecBoot-for-Mac -I/Users/sebastienpeek/RecBoot-for-Mac/build/Release/include -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources/x86_64 -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources -c /Users/sebastienpeek/RecBoot-for-Mac/RecBoot_Prefix.pch -o /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-godkqbshkvnlnbdqtkkrhixraezf/RecBoot_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-hbhfvhpxxfvifvacbitqrxjwsfll/RecBoot_Prefix.pch.gch RecBoot_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s315538263.067992
+e315538301.040026
+r1
+xProcessPCH
+x/var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-hbhfvhpxxfvifvacbitqrxjwsfll/RecBoot_Prefix.pch.gch
+xRecBoot_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile RecBoot_Prefix.pch315538263#315538301#0(0"0(0#0#55"/Users/sebastienpeek/RecBoot-for-Mac/RecBoot_Prefix.pch8616878496#1417"    cd /Users/sebastienpeek/RecBoot-for-Mac    setenv LANG en_US.US-ASCII    "/Developer 4.2/usr/bin/gcc-4.2" -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer 4.2/SDKs/MacOSX10.6.sdk" -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-generated-files.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-own-target-headers.hmap -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-all-target-headers.hmap -iquote /Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/RecBoot-project-headers.hmap -F/Users/sebastienpeek/RecBoot-for-Mac/build/Release -F/Users/sebastienpeek/RecBoot-for-Mac -I/Users/sebastienpeek/RecBoot-for-Mac/build/Release/include -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources/i386 -I/Users/sebastienpeek/RecBoot-for-Mac/build/RecBoot.build/Release/RecBoot.build/DerivedSources -c /Users/sebastienpeek/RecBoot-for-Mac/RecBoot_Prefix.pch -o /var/folders/kh/khRJYoxCFPqDvnxzTPLmp++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RecBoot_Prefix-hbhfvhpxxfvifvacbitqrxjwsfll/RecBoot_Prefix.pch.gch0#
+
+CTouch /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app
+s315572510.257387
+e315572510.260546
+r1
+xTouch
+x/Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app
+lSLF07#2@68"Touch /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app315572510#315572510#0(0"0(0#0#0"8610386592#129"    cd /Users/sebastienpeek/RecBoot-for-Mac    /usr/bin/touch -c /Users/sebastienpeek/RecBoot-for-Mac/build/Release/RecBoot.app0#
+

@@ -47,6 +47,10 @@ void recovery_disconnect_callback(struct am_recovery_device *rdev) {
 	AMRestoreRegisterForDeviceNotifications(recovery_disconnect_callback, recovery_connect_callback, recovery_disconnect_callback, recovery_disconnect_callback, 0, NULL);
 }
 
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {
+	return YES;
+}
+
 - (IBAction)enterRec:(id)pId {
 	AMDeviceConnect(device);
 	AMDeviceEnterRecovery(device);
@@ -54,6 +58,11 @@ void recovery_disconnect_callback(struct am_recovery_device *rdev) {
 }
 
 - (IBAction)exitRec:(id)pId {
+	
+	NSString *foundValue = [deviceDetails stringValue];
+	
+	if ([foundValue isEqualToString:@"Recovery Device Connected"]) {
+	
 	//Allow the user to exit recovery mode through the application.
 	
 	//Makes recoverset the NSTask to be used.
@@ -82,7 +91,15 @@ void recovery_disconnect_callback(struct am_recovery_device *rdev) {
 	//Sends the following command to irecovery.
 	[recoverreboot setArguments:[NSArray arrayWithObjects:@"-c", @"reboot",nil]];
 	[recoverreboot launch];
+	}
 	
+	else {
+		
+		//Probably should find a way to make this more user friendly and display that it won't work...
+		//Or maybe people should actually check it out first, then they'd know...
+		NSLog(@"Man, why can't people actually read if their device is in recovery mode or not?");
+	}
+
 }
 
 - (void)recoveryCallback {
@@ -112,12 +129,17 @@ void recovery_disconnect_callback(struct am_recovery_device *rdev) {
 	} else if ([deviceString isEqualToString:@"iPad1,1"]) {
 		deviceString = @"iPad 1G";
 	} else {
-		deviceString = @"Unknown Device";
+		deviceString = @"Unknown";
 	}
 	
-	NSString *completeString = [NSString stringWithFormat:@"%@ Connected, %@, %@, %@", deviceString, modelNumber, firmwareVersion, serialNumber];
+	if (deviceString == @"Unknown") {
+		NSString *completeString = [NSString stringWithFormat:@"%@ Mode/Device Detected",deviceString];
+		[deviceDetails setStringValue:completeString];
+	} else {
+		NSString *completeString = [NSString stringWithFormat:@"%@ Connected, %@, %@, %@", deviceString, modelNumber, firmwareVersion, serialNumber];
+		[deviceDetails setStringValue:completeString];
+	}
 	
-	[deviceDetails setStringValue:completeString];
 }
 
 - (void)dePopulateData {

@@ -1,0 +1,10 @@
+RecBoot For Mac 2.1
+---------------------------------------------------------------------------
+ADDED
+¥ If device isn't in recovery mode and the user hits Exit Recovery, we don't send the usb commands anymore.
+¥ When the user hits the close button, kills the application. Same as CMD+Q.
+¥ Ohhai auto-updating system. - Sparkle
+---------------------------------------------------------------------------
+CHANGED
+¥ If the device is in a unknown mode or it is an unknown device, we now display this neatly in deviceString.
+---------------------------------------------------------------------------
