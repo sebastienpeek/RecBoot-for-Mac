@@ -11,6 +11,8 @@
 
 @interface RecBootAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;
+	IBOutlet NSButton *exitRecBut;
+	IBOutlet NSProgressIndicator *loadingInd;
 	
 	IBOutlet NSTextField *deviceDetails;
 	
@@ -22,8 +24,12 @@
 - (void)populateData;
 - (void)dePopulateData;
 - (void)recoveryCallback;
+- (void)loadingProgress;
+- (void)enterRecovery;
 - (NSString *)getDeviceValue:(NSString *)value;
 
 @property (assign) IBOutlet NSWindow *window;
+@property (nonatomic, retain) NSButton *exitRecBut;
+@property (nonatomic, retain) NSProgressIndicator *loadingInd;
 
 @end

@@ -39,12 +39,24 @@ void recovery_disconnect_callback(struct am_recovery_device *rdev) {
 
 @implementation RecBootAppDelegate
 
-@synthesize window;
+@synthesize window, exitRecBut, loadingInd;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	classPointer = self;
 	AMDeviceNotificationSubscribe(notification_callback, 0, 0, 0, &notification);
 	AMRestoreRegisterForDeviceNotifications(recovery_disconnect_callback, recovery_connect_callback, recovery_disconnect_callback, recovery_disconnect_callback, 0, NULL);
+	
+	NSString *foundValue = [deviceDetails stringValue];
+	
+	if ([foundValue isEqualToString:@"Recovery Device Connected"]) {
+		
+		[exitRecBut setEnabled:YES];
+	
+	} else {
+		[exitRecBut setEnabled:NO];
+	}
+
+	
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {
@@ -52,17 +64,19 @@ void recovery_disconnect_callback(struct am_recovery_device *rdev) {
 }
 
 - (IBAction)enterRec:(id)pId {
+	[classPointer enterRecovery];
+	[classPointer dePopulateData];
+	[classPointer loadingProgress];
+}
+
+- (void)enterRecovery {
 	AMDeviceConnect(device);
 	AMDeviceEnterRecovery(device);
-	[classPointer dePopulateData];
 }
 
 - (IBAction)exitRec:(id)pId {
 	
-	NSString *foundValue = [deviceDetails stringValue];
-	
-	if ([foundValue isEqualToString:@"Recovery Device Connected"]) {
-	
+	[classPointer loadingProgress];
 	//Allow the user to exit recovery mode through the application.
 	
 	//Makes recoverset the NSTask to be used.
@@ -91,19 +105,13 @@ void recovery_disconnect_callback(struct am_recovery_device *rdev) {
 	//Sends the following command to irecovery.
 	[recoverreboot setArguments:[NSArray arrayWithObjects:@"-c", @"reboot",nil]];
 	[recoverreboot launch];
-	}
 	
-	else {
-		
-		//Probably should find a way to make this more user friendly and display that it won't work...
-		//Or maybe people should actually check it out first, then they'd know...
-		NSLog(@"Man, why can't people actually read if their device is in recovery mode or not?");
-	}
-
 }
 
 - (void)recoveryCallback {
 	[deviceDetails setStringValue:@"Recovery Device Connected"];
+	[exitRecBut setEnabled:YES];
+	[loadingInd setHidden:YES];
 }
 
 - (void)populateData {
@@ -136,6 +144,7 @@ void recovery_disconnect_callback(struct am_recovery_device *rdev) {
 		NSString *completeString = [NSString stringWithFormat:@"%@ Mode/Device Detected",deviceString];
 		[deviceDetails setStringValue:completeString];
 	} else {
+		[loadingInd setHidden:YES];
 		NSString *completeString = [NSString stringWithFormat:@"%@ Connected, %@, %@, %@", deviceString, modelNumber, firmwareVersion, serialNumber];
 		[deviceDetails setStringValue:completeString];
 	}
@@ -144,7 +153,12 @@ void recovery_disconnect_callback(struct am_recovery_device *rdev) {
 
 - (void)dePopulateData {
 	[deviceDetails setStringValue:@""];
-	
+	[exitRecBut setEnabled:NO];
+}
+
+- (void)loadingProgress {
+	[loadingInd setHidden:NO];
+	[loadingInd startAnimation: self];
 }
 
 - (NSString *)getDeviceValue:(NSString *)value {

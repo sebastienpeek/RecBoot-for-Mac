@@ -14,9 +14,9 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		ED1E4A1E12C248ED00B2FC7B /* MobileDevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1E4A1D12C248ED00B2FC7B /* MobileDevice.framework */; };
 		ED1E4AA512C2541100B2FC7B /* irecovery in Resources */ = {isa = PBXBuildFile; fileRef = ED1E4AA412C2541100B2FC7B /* irecovery */; };
-		ED1E4AA712C2541E00B2FC7B /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = ED1E4AA612C2541E00B2FC7B /* Icon.icns */; };
 		ED77D6C912CF330100FE90F0 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED77D6C812CF330100FE90F0 /* Sparkle.framework */; };
 		ED77D6D212CF330700FE90F0 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ED77D6C812CF330100FE90F0 /* Sparkle.framework */; };
+		EDD01CDE12D0EF68004C2A14 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = EDD01CDD12D0EF68004C2A14 /* Icon.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,8 +48,8 @@
 		ED1E4A1D12C248ED00B2FC7B /* MobileDevice.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileDevice.framework; sourceTree = "<group>"; };
 		ED1E4A2112C2490100B2FC7B /* MobileDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileDevice.h; sourceTree = "<group>"; };
 		ED1E4AA412C2541100B2FC7B /* irecovery */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = irecovery; sourceTree = "<group>"; };
-		ED1E4AA612C2541E00B2FC7B /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		ED77D6C812CF330100FE90F0 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		EDD01CDD12D0EF68004C2A14 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +127,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				ED1E4AA612C2541E00B2FC7B /* Icon.icns */,
+				EDD01CDD12D0EF68004C2A14 /* Icon.icns */,
 				8D1107310486CEB800E47090 /* RecBoot-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
@@ -208,7 +208,7 @@
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				ED1E4AA512C2541100B2FC7B /* irecovery in Resources */,
-				ED1E4AA712C2541E00B2FC7B /* Icon.icns in Resources */,
+				EDD01CDE12D0EF68004C2A14 /* Icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
