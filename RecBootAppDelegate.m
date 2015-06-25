@@ -17,7 +17,7 @@ void notification_callback(struct am_device_notification_callback_info *info, in
 		NSLog(@"Device connected.");
 		device = info->dev;
 		AMDeviceConnect(device);
-		AMDevicePair(device);
+		AMDeviceIsPaired(device);
 		AMDeviceValidatePairing(device);
 		AMDeviceStartSession(device);
 		[classPointer populateData];
@@ -120,6 +120,8 @@ void recovery_disconnect_callback(struct am_recovery_device *rdev) {
 	NSString *deviceString = [self getDeviceValue:@"ProductType"];
 	NSString *firmwareVersion = [self getDeviceValue:@"ProductVersion"];
 	
+    
+    
 	if ([deviceString isEqualToString:@"iPod1,1"]) {
 		deviceString = @"iPod Touch 1G";
 	} else if ([deviceString isEqualToString:@"iPod2,1"]) {
@@ -140,7 +142,7 @@ void recovery_disconnect_callback(struct am_recovery_device *rdev) {
 		deviceString = @"Unknown";
 	}
 	
-	if (deviceString == @"Unknown") {
+	if ([deviceString isEqualToString:@"Unknown"]) {
 		NSString *completeString = [NSString stringWithFormat:@"%@ Mode/Device Detected",deviceString];
 		[deviceDetails setStringValue:completeString];
 	} else {
@@ -162,7 +164,7 @@ void recovery_disconnect_callback(struct am_recovery_device *rdev) {
 }
 
 - (NSString *)getDeviceValue:(NSString *)value {
-	return AMDeviceCopyValue(device, 0, value);
+	return (NSString *)AMDeviceCopyValue(device, 0, (CFStringRef)value);
 }
 
 @end
