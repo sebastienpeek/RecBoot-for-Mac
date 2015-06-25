@@ -14,23 +14,8 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		ED1E4A1E12C248ED00B2FC7B /* MobileDevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1E4A1D12C248ED00B2FC7B /* MobileDevice.framework */; };
 		ED1E4AA512C2541100B2FC7B /* irecovery in Resources */ = {isa = PBXBuildFile; fileRef = ED1E4AA412C2541100B2FC7B /* irecovery */; };
-		ED77D6C912CF330100FE90F0 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED77D6C812CF330100FE90F0 /* Sparkle.framework */; };
-		ED77D6D212CF330700FE90F0 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ED77D6C812CF330100FE90F0 /* Sparkle.framework */; };
 		EDD01CDE12D0EF68004C2A14 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = EDD01CDD12D0EF68004C2A14 /* Icon.icns */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		ED77D6F112CF34A800FE90F0 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				ED77D6D212CF330700FE90F0 /* Sparkle.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -48,7 +33,6 @@
 		ED1E4A1D12C248ED00B2FC7B /* MobileDevice.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileDevice.framework; sourceTree = "<group>"; };
 		ED1E4A2112C2490100B2FC7B /* MobileDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileDevice.h; sourceTree = "<group>"; };
 		ED1E4AA412C2541100B2FC7B /* irecovery */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = irecovery; sourceTree = "<group>"; };
-		ED77D6C812CF330100FE90F0 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		EDD01CDD12D0EF68004C2A14 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,7 +43,6 @@
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				ED1E4A1E12C248ED00B2FC7B /* MobileDevice.framework in Frameworks */,
-				ED77D6C912CF330100FE90F0 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +61,6 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ED77D6C812CF330100FE90F0 /* Sparkle.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
@@ -164,7 +146,6 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
-				ED77D6F112CF34A800FE90F0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -181,6 +162,8 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "RecBoot" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
@@ -264,7 +247,9 @@
 				GCC_PREFIX_HEADER = RecBoot_Prefix.pch;
 				INFOPLIST_FILE = "RecBoot-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = RecBoot;
+				SDKROOT = macosx10.9;
 			};
 			name = Debug;
 		};
@@ -283,7 +268,9 @@
 				GCC_PREFIX_HEADER = RecBoot_Prefix.pch;
 				INFOPLIST_FILE = "RecBoot-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = RecBoot;
+				SDKROOT = macosx10.9;
 			};
 			name = Release;
 		};
