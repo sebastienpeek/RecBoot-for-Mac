@@ -14,11 +14,11 @@
 		<string>https://github.com/sebastienpeek/RecBoot-for-Mac.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>RecBoot.xcodeproj</string>
+	<string>RecBoot/RecBoot.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>0771176B9077C0AA04743BDDE64A08C419A960A0</key>
-		<string>../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/sebastienpeek/RecBoot-for-Mac.git</string>
