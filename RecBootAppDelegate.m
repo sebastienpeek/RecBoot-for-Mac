@@ -37,26 +37,37 @@ void recovery_disconnect_callback(struct am_recovery_device *rdev) {
 	[classPointer dePopulateData];
 }
 
-@implementation RecBootAppDelegate
+@interface RecBootAppDelegate ()
 
-@synthesize window, exitRecBut, loadingInd;
+@property (nonatomic, strong) IBOutlet NSButton *exitRecButton;
+@property (nonatomic, strong) IBOutlet NSProgressIndicator *loadingIndicator;
+
+@property (nonatomic, strong) IBOutlet NSTextField *connectedDeviceLbl;
+@property (nonatomic, strong) IBOutlet NSTextField *deviceNameLbl;
+@property (nonatomic, strong) IBOutlet NSTextField *deviceModelLbl;
+@property (nonatomic, strong) IBOutlet NSTextField *deviceFirmwareLbl;
+@property (nonatomic, strong) IBOutlet NSTextField *deviceSerialLbl;
+
+@property BOOL recoveryDeviceIsConnected;
+
+- (void)loadingProgress;
+- (void)enterRecovery;
+- (NSString *)getDeviceValue:(NSString *)value;
+
+@end
+
+@implementation RecBootAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	classPointer = self;
 	AMDeviceNotificationSubscribe(notification_callback, 0, 0, 0, &notification);
 	AMRestoreRegisterForDeviceNotifications(recovery_disconnect_callback, recovery_connect_callback, recovery_disconnect_callback, recovery_disconnect_callback, 0, NULL);
 	
-	NSString *foundValue = [deviceDetails stringValue];
-	
-	if ([foundValue isEqualToString:@"Recovery Device Connected"]) {
-		
-		[exitRecBut setEnabled:YES];
-	
-	} else {
-		[exitRecBut setEnabled:NO];
-	}
-
-	
+    if (self.recoveryDeviceIsConnected) {
+        [self.exitRecButton setEnabled:YES];
+    } else {
+        [self.exitRecButton setEnabled:NO];
+    }
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {
@@ -64,9 +75,9 @@ void recovery_disconnect_callback(struct am_recovery_device *rdev) {
 }
 
 - (IBAction)enterRec:(id)pId {
-	[classPointer enterRecovery];
-	[classPointer dePopulateData];
-	[classPointer loadingProgress];
+	[self enterRecovery];
+	[self dePopulateData];
+	[self loadingProgress];
 }
 
 - (void)enterRecovery {
@@ -75,8 +86,10 @@ void recovery_disconnect_callback(struct am_recovery_device *rdev) {
 }
 
 - (IBAction)exitRec:(id)pId {
+    
+    self.recoveryDeviceIsConnected = NO;
 	
-	[classPointer loadingProgress];
+	[self loadingProgress];
 	//Allow the user to exit recovery mode through the application.
 	
 	//Makes recoverset the NSTask to be used.
@@ -105,60 +118,52 @@ void recovery_disconnect_callback(struct am_recovery_device *rdev) {
 	//Sends the following command to irecovery.
 	[recoverreboot setArguments:[NSArray arrayWithObjects:@"-c", @"reboot",nil]];
 	[recoverreboot launch];
-	
 }
 
 - (void)recoveryCallback {
-	[deviceDetails setStringValue:@"Recovery Device Connected"];
-	[exitRecBut setEnabled:YES];
-	[loadingInd setHidden:YES];
+	[self.connectedDeviceLbl setStringValue:@"Recovery Device Connected"];
+    self.recoveryDeviceIsConnected = YES;
+
+    [self.exitRecButton setEnabled:YES];
+	[self.loadingIndicator setHidden:YES];
+    
+    [self.deviceNameLbl setHidden:YES];
+    [self.deviceModelLbl setHidden:YES];
+    [self.deviceFirmwareLbl setHidden:YES];
+    [self.deviceSerialLbl setHidden:YES];
+    
 }
 
 - (void)populateData {
-	NSString *serialNumber = [self getDeviceValue:@"SerialNumber"];
-	NSString *modelNumber = [self getDeviceValue:@"ModelNumber"];
-	NSString *deviceString = [self getDeviceValue:@"ProductType"];
-	NSString *firmwareVersion = [self getDeviceValue:@"ProductVersion"];
     
-	if ([deviceString isEqualToString:@"iPod1,1"]) {
-		deviceString = @"iPod Touch 1G";
-	} else if ([deviceString isEqualToString:@"iPod2,1"]) {
-		deviceString = @"iPod Touch 2G";
-	} else if ([deviceString isEqualToString:@"iPod3,1"]) {
-		deviceString = @"iPod Touch 3G";
-	} else if ([deviceString isEqualToString:@"iPhone1,1"]) {
-		deviceString = @"iPhone 2G";
-	} else if ([deviceString isEqualToString:@"iPhone1,2"]) {
-		deviceString = @"iPhone 3G";
-	} else if ([deviceString isEqualToString:@"iPhone2,1"]) {
-		deviceString = @"iPhone 3G[S]";
-	} else if ([deviceString isEqualToString:@"iPhone3,1"]) {
-		deviceString = @"iPhone 4";
-	} else if ([deviceString isEqualToString:@"iPad1,1"]) {
-		deviceString = @"iPad 1G";
-	} else {
-		deviceString = @"Unknown";
-	}
-	
-	if ([deviceString isEqualToString:@"Unknown"]) {
-		NSString *completeString = [NSString stringWithFormat:@"%@ Mode/Device Detected",deviceString];
-		[deviceDetails setStringValue:completeString];
-	} else {
-		[loadingInd setHidden:YES];
-		NSString *completeString = [NSString stringWithFormat:@"%@ Connected, %@, %@, %@", deviceString, modelNumber, firmwareVersion, serialNumber];
-		[deviceDetails setStringValue:completeString];
-	}
-	
+    if (!self.recoveryDeviceIsConnected) {
+        
+        [self.loadingIndicator setHidden:YES];
+    
+        [self.deviceNameLbl setHidden:NO];
+        [self.deviceModelLbl setHidden:NO];
+        [self.deviceFirmwareLbl setHidden:NO];
+        [self.deviceSerialLbl setHidden:NO];
+        
+        [self.connectedDeviceLbl setStringValue:@"Device Connected"];
+    
+        [self.deviceNameLbl setStringValue:[self getDeviceValue:@"DeviceName"]];
+        [self.deviceModelLbl setStringValue:[self getDeviceValue:@"ProductType"]];
+        [self.deviceFirmwareLbl setStringValue:[NSString stringWithFormat:@"iOS%@", [self getDeviceValue:@"ProductVersion"]]];
+        [self.deviceSerialLbl setStringValue:[self getDeviceValue:@"SerialNumber"]];
+        
+    }
+    
 }
 
 - (void)dePopulateData {
-	[deviceDetails setStringValue:@""];
-	[exitRecBut setEnabled:NO];
+	[self.connectedDeviceLbl setStringValue:@""];
+	[self.exitRecButton setEnabled:NO];
 }
 
 - (void)loadingProgress {
-	[loadingInd setHidden:NO];
-	[loadingInd startAnimation: self];
+	[self.loadingIndicator setHidden:NO];
+	[self.loadingIndicator startAnimation: self];
 }
 
 - (NSString *)getDeviceValue:(NSString *)value {
