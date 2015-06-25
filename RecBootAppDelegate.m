@@ -119,8 +119,6 @@ void recovery_disconnect_callback(struct am_recovery_device *rdev) {
 	NSString *modelNumber = [self getDeviceValue:@"ModelNumber"];
 	NSString *deviceString = [self getDeviceValue:@"ProductType"];
 	NSString *firmwareVersion = [self getDeviceValue:@"ProductVersion"];
-	
-    
     
 	if ([deviceString isEqualToString:@"iPod1,1"]) {
 		deviceString = @"iPod Touch 1G";
